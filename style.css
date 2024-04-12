@@ -1,0 +1,144 @@
+body{
+    background-color: #1f1f1f;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 700px;
+    margin: 20px auto;
+    padding: 10px;
+    animation-name: appear ;
+    animation-duration: 1s;
+}
+@keyframes appear{
+    from{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}
+
+h1{
+    font-size: 20px;
+    font-family: Calibri;
+    color: #ff0037;
+}
+
+.title{
+    font-size:40px;
+    font-family: Calibri;
+    color: #c538a7;
+    font-weight: 100;
+    
+}
+
+.items-container{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+}
+.items-container .item{
+    color: #d650ff;
+    font-family: Calibri;
+    font-size: 20px;
+    border: 1px solid #c538a7;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 10px;
+    
+    transition: all 0.2s;
+}
+.items-container .item:hover{
+    text-shadow: 0px 0px 5px #c538a7;
+    box-shadow: 0px 0px 5px #c538a7;
+}
+
+.input-section{
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-section input{
+    width: 80%;
+    border: none;
+    padding: 8px;
+    background-color: #3d3d3d;
+    border-radius: 3px;
+    font-size: 18px;
+    color: #e4e4e4;
+}
+.input-section input:focus{
+    outline: none;
+}
+
+.add-section{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.add-section button{
+    margin: 5px;
+    border: none;
+    padding: 8px;
+    font-size: 17px;
+    background-color: #ff9900;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+.add-section button:hover{
+    background-color: #ffb444;
+}
+.add-section button:active{
+    background-color: #fff;
+    color: #ff9900;
+}
+
+.remove-section{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ff5b1b;
+    margin-bottom: 10px;
+}
+
+.remove-section button{
+    margin: 5px;
+    border: none;
+    padding: 8px;
+    font-size: 17px;
+    background-color: #ff5100;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+.remove-section button:hover{
+    background-color: #ff8f44;
+}
+.remove-section button:active{
+    background-color: #fff;
+    color: #ff3c00;
+}
+
+
+
